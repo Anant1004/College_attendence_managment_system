@@ -22,13 +22,16 @@
     margin: 30px;
 }
 .section40 .left_side_info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
-    top:40%;
-    left: 7%;
+    top: 40%;
+    left: 4%;
     width: 32%;
 }
 .section40 .left_side_info h3{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #FF7A00;
 }
 .section40 .left_side_info h2{
@@ -36,7 +39,12 @@
     margin: -10px;
 }
 .section40 .left_side_info h4{
-    font-size: 1.4rem;
+    font-size: 2.3rem;
+}
+.btn{
+    height: 3rem;
+    width: 10rem;
+    /* font-size: 200px; */
 }
 .section40 .left_side_info .buttons{
     margin-top: 10px;
