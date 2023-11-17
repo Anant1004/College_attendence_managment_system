@@ -32,8 +32,12 @@
   flex-direction: column;
 }
 .full-container .main-section {
-  background-color: #ffd09a;
+  background-color: #ff7a00;
   grid-column-start: 2;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  border-top-left-radius: 3px;
 }
 /* grid complete */
 /* top section started */
@@ -64,8 +68,8 @@
   line-height: normal;
 }
 .top-section .college-detial img {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 }
 /* left section started here  */
 .left-section .user-name-section {
@@ -125,4 +129,102 @@
   color: red;
   font-size: 1.2rem;
   font-weight: 600;
+}
+/* main section started here  */
+.add-student {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.add-student button {
+  padding: 15px 70px;
+  margin-right: 85px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: #ff7a00;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 6px 6px 10px #d07d2f, -6px -6px 10px #fa9a41;
+  cursor: pointer;
+}
+.add-student button:active {
+  transform: translate(1px, 1px);
+}
+.card-box {
+  height: 70%;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-box .card {
+  background-color: #ff7c01;
+  height: 100%;
+  outline: 2px solid #f97901;
+  width: 25%;
+  box-shadow: 6px 6px 20px #bd6d22, -6px -6px 20px #ffb66d;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card .topic {
+  width: 80%;
+  text-align: center;
+  margin-top: 20px;
+}
+.card .topic h1 {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+.card span {
+  width: 80%;
+  color: #ffffff;
+  text-align: start;
+  margin-top: 15px;
+}
+.card .sem-box-section {
+  height: 50%;
+  margin-top: 25px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 22% 22% 22%;
+  grid-template-rows: 22% 22% 22% 22%;
+  gap: 10px;
+  justify-content: center;
+
+}
+.sem-box-section .small-box{
+  background-color: #ff8000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 6px 6px 7px #bd6d22, -6px -6px 7px #f8912a;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card button{
+  width: 80%;
+
+  height: 15%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: #ff7a00;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 6px 6px 10px #d07d2f, -6px -6px 10px #fa9a41;
+  cursor: pointer;
+}
+.card button:active{
+  transform: translate(1px, 1px);
 }
