@@ -64,8 +64,9 @@ a{
 }
 .section40 .left_side_info .buttons a:hover{
     border:2px solid #FF7A00;
-    background-color: #000000;
+    background-color: #ffffff;
     cursor: pointer;
+    color:#000000;
     box-shadow: 0px 0px 15px #FF7A00;
 }
 .section60{
