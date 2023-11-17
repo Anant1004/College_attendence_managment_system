@@ -41,7 +41,7 @@
 .section40 .left_side_info h4{
     font-size: 2.3rem;
 }
-.btn{
+a{
     height: 3rem;
     width: 10rem;
     /* font-size: 200px; */
@@ -49,7 +49,7 @@
 .section40 .left_side_info .buttons{
     margin-top: 10px;
 }
-.section40 .left_side_info .buttons button{
+.section40 .left_side_info .buttons a {
     padding: 8px 25px;
     font-weight: 700;
     font-size: 1rem;
@@ -59,8 +59,10 @@
     border:2px solid #FF7A00;
     background-color: #FF7A00;
     transition: .5s ease-in-out;
+    text-decoration: none;
+    color:#ffffff;
 }
-.section40 .left_side_info .buttons button:hover{
+.section40 .left_side_info .buttons a:hover{
     border:2px solid #FF7A00;
     background-color: #fff;
     cursor: pointer;

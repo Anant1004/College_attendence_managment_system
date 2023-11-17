@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inika", serif;
+}
+/* main grid section */
+.full-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 15% 85%;
+  place-self: start;
+}
+.full-container .top-section {
+  background-color: #ffffff;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.full-container .left-section {
+  background-color: #ffffff;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.full-container .main-section {
+  background-color: #ffd09a;
+  grid-column-start: 2;
+}
+/* grid complete */
+/* top section started */
+.top-section .dashboard span {
+  color: #ff7a00;
+  font-family: Inika;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 60px;
+}
+
+.top-section .college-detial {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-section .college-detial span {
+  color: #ff7a00;
+  margin-right: 20px;
+  font-family: Inika;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.top-section .college-detial img {
+  height: 80px;
+  width: 80px;
+}
+/* left section started here  */
+.left-section .user-name-section {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left-section .user-name-section .circle {
+  background-color: rgb(220, 220, 220);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-section .user-name-section .circle img {
+  height: 35px;
+  width: 35px;
+}
+.left-section .user-name-section span {
+  font-size: 0.9rem;
+}
+.left-section .menu-section .each-menu {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.left-section .menu-section .each-menu img {
+  height: 20px;
+  width: 20px;
+  margin-right: 14px;
+}
+.left-section .menu-section .each-menu a {
+  text-decoration: none;
+  color: #ff7a00;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.left-section .logout-section {
+  margin-bottom: 20px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+}
+.left-section .logout-section span img {
+  height: 22px;
+  margin-top: 5px;
+  width: 22px;
+}
+.left-section .logout-section a {
+  text-decoration: none;
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
