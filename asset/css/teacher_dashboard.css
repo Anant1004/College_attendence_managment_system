@@ -161,6 +161,7 @@
   display: flex;
   justify-content: space-evenly;
 }
+/* attendence card started here */
 .card-box .card {
   background-color: #ff7c01;
   height: 100%;
@@ -228,3 +229,4 @@
 .card button:active{
   transform: translate(1px, 1px);
 }
+/* notice card started here/* 
