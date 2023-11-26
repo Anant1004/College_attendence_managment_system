@@ -89,9 +89,8 @@
   justify-content: center;
   align-items: center;
 }
-.left-section .user-name-section .circle img {
-  height: 35px;
-  width: 35px;
+.left-section .user-name-section .circle i {
+font-size: 2.5rem;
 }
 .left-section .user-name-section span {
   font-size: 0.9rem;
@@ -102,10 +101,9 @@
   align-items: center;
   text-align: left;
 }
-.left-section .menu-section .each-menu img {
-  height: 20px;
-  width: 20px;
-  margin-right: 14px;
+.left-section .menu-section .each-menu i {
+  font-size: 1.3rem;
+  margin-right: 10px;
 }
 .left-section .menu-section .each-menu a {
   text-decoration: none;
@@ -119,10 +117,10 @@
   display: flex;
   align-items: center;
 }
-.left-section .logout-section span img {
-  height: 22px;
-  margin-top: 5px;
-  width: 22px;
+.left-section .logout-section span i {
+  margin: 5px 5px 0 0;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .left-section .logout-section a {
   text-decoration: none;
@@ -258,9 +256,9 @@
   font-weight: 600;
   border-radius: 12px;
 }
-.select-sem .button img{
-  height: 10px;
-  width: 10px;
+.select-sem .button i{
+  font-size: 0.6rem;
+  margin-left: -5px;
 }
 .text-area{
   margin-top: 8px;

@@ -61,12 +61,11 @@ body{
 .input::placeholder{
     color: black;
 }
-.input-box span img{
+.input-box span i{
     position: absolute;
     bottom: 5px;;
     right: 5px;
-    height:20px;
-    width:20px;
+    font-size: 1.3rem;
 }
 .input-box .label{
     position: absolute;
