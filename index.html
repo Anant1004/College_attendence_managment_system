@@ -18,8 +18,7 @@
                 <h4>Track Attendence, for</h4>
                 <div class="buttons">
                     <a href="/asset/pages/teacher_login.html" class="btn"  target="_blank">Teacher</a>
-                    <a href="/asset/pages/Student_login.html" class="btn"
-                    target="_blank">Student</a>
+                    <a id="student-btn" onclick="studentBtn()" class="btn" target="_blank">Student</a>
                 </div>
             </div>
         </div>
@@ -35,7 +34,7 @@
     </div>
     <div class="footer">
     </div>
-    <div class="container">
+    <div class="container" id="studentContainer">
         <div class="login-section">
             <h1>Student login</h1>
             <div class="input-box">
@@ -51,9 +50,10 @@
             </div>
         </div>
         <div class="pic">
-            <i class='bx bx-x' style='color:#060606'></i>
+            <i class='bx bx-x' id="studentCrossBtn" onclick="studentCancel()" style='color:#060606'></i>
             <img src="/asset/image/1.png" alt="" >
         </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 </html>
