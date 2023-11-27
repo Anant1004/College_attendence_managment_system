@@ -23,7 +23,7 @@ body{
     background-color: #ff7a00;
     display: flex;
     border-radius: 12px;
-    /* opacity: 0; */
+    opacity: 0;
 }
 /* login section started here  */
 .login-section{
