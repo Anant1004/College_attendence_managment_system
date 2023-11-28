@@ -263,6 +263,10 @@ overflow: hidden;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+.section60 ul li a{
+    text-decoration: none;
+    color: white;
+}
 .section60 ul li::after{
     content: "";
     position: absolute;
