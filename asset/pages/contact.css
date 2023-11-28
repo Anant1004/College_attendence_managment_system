@@ -160,6 +160,35 @@ body{
         height: 350px;
     }
 }
+@media screen and (max-width: 650px){
+    body{
+        display: block;
+        height: 50vh;
+    }
+    .first-section{
+        width: 100%;    
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        
+    }
+    .second-section{
+        display: flex;
+        width: 100%;
+    }
+    .container{
+        /* background-color: red; */
+        width:500px ;
+        padding: 15px;
+
+    }
+
+
+
+
+
+}
 @media screen and (max-width: 450px){
     body{
         display: block;
@@ -174,6 +203,12 @@ body{
         
     }
     .second-section{
-        display: none;
+        display: flex;
+        width: 100%;
+    }
+    .container{
+        /* background-color: red; */
+        width:350px ;
+
     }
 }
