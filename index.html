@@ -17,8 +17,8 @@
                 <h2>Smart Attend</h2>
                 <h4>Track Attendence, for</h4>
                 <div class="buttons">
-                    <a href="/asset/pages/teacher_login.html" class="btn"  target="_blank">Teacher</a>
-                    <a id="student-btn" onclick="studentBtn()" class="btn" target="_blank">Student</a>
+                    <a id="teacher-btn" onclick="teacherBtn()" class="btn" >Teacher</a>
+                    <a id="student-btn" onclick="studentBtn()" class="btn">Student</a>
                 </div>
             </div>
         </div>
@@ -33,6 +33,31 @@
         </div>
     </div>
     <div class="footer">
+    </div>
+    <div class="teacher " id="teacherContainer" >
+        <div class="login-section">
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <span><i class="bx bx-id-card"></i></span>
+                <input class="input" type="text"placeholder="Enter Your teacher ID"/>
+            </div>
+            <div class="input-box">
+                <span><i class="bx bx-lock-alt"></i></span>
+                <input class="input" type="password" placeholder="Enter Your Password"/>
+            </div>
+        <div class="login-btn">
+            <button>Login</button>
+        </div>
+        <div class="forget-password">
+            <div><p>Forget Password ?</p></div>
+            <a href="">click here</a>
+        </div>
+        </div>
+        <!-- image section started here -->
+        <div class="image-section">
+            <i class='bx bx-x' id="studentCrossBtn" onclick="teacherCancel()" style='color:#060606'></i>
+            <img src="/asset/image/pngwing.com.png" alt="img"/>
+        </div>
     </div>
     <div class="container" id="studentContainer">
         <div class="login-section">
