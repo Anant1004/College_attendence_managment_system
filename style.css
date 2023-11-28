@@ -11,19 +11,30 @@ body{
     position: relative;
 }
 /* teacherlogin */
-
-/* studentlogin */
-.container{
+.teacher{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 25%;
+    left: 25%;
     height: 400px;
     width: 700px;
     background-color: #ff7a00;
     display: flex;
     border-radius: 12px;
-    opacity: 0;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+}
+/* studentlogin */
+.container{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 400px;
+    width: 700px;
+    background-color: #ff7a00;
+    display: flex;
+    border-radius: 12px;
+    transform: scale(0);
+    transition: .5s ease-in-out;
 }
 /* login section started here  */
 .login-section{
@@ -127,6 +138,15 @@ body{
     width:  35%;
     background-color: #fff;
     border-radius: 25px 12px 12px 25px;
+}
+.image-section i{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
+    z-index: 99;
+
 }
 .image-section img{
     position: absolute;
