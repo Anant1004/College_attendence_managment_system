@@ -37,7 +37,7 @@ body{
      transition: .5s;
 }
 .nav a:hover{
-    #af05c9
+   color: #af05c9;
 }
 .first-section{
     width: 60%;    
