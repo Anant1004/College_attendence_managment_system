@@ -1,288 +1,463 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+SA+Beginner:wght@500&family=Josefin+Sans:ital,wght@0,100;0,300;1,300&family=Kablammo&family=Montserrat:wght@300;500&family=Nunito:ital,wght@0,400;1,500&family=REM:wght@300&family=Tektur:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Poppins:wght@200;400&display=swap");
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Montserrat ;
+    font-family: "Poppins", sans-serif;
+}
 
-}
-body{
+body {
     position: relative;
+    height: 100vh;
+    width: 100%;
 }
-/* teacherlogin */
-.teacher{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    height: 400px;
-    width: 700px;
-    background-color: #ff7a00;
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    padding: 0 150px;
+    width: 100%;
+    height: 70px;
     display: flex;
-    border-radius: 12px;
-    transform: scale(0);
-    transition: .5s ease-in-out;
-}
-/* studentlogin */
-.container{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    height: 400px;
-    width: 700px;
-    background-color: #ff7a00;
-    display: flex;
-    border-radius: 12px;
-    transform: scale(0);
-    transition: .5s ease-in-out;
-}
-/* login section started here  */
-.login-section{
-    width: 65%;
-    height: 100%;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    box-shadow: 0 6px 10px #fdbcbc;
 }
-.login-section h1{
-    font-size: 3rem;
-    font-weight: 699;
-    color: #ffffff;
-    margin-top: 25px;
-}
-.login-section .input-box{
-    position: relative;
-    height: 17%;
-    width: 80%;
-    margin-top: 10px;
-    border-bottom: 2px solid #ffffff;
-    transition: .5s;
-}
-.input-box .input{
-    position: absolute;
-    bottom: 0;
-    height: 50%;
-    width: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 0 35px 0 10px;
-    font-size: 1rem;
-}
-.input::placeholder{
-    color: black;
-}
-.input-box span i{
-    position: absolute;
-    bottom: 5px;;
-    right: 5px;
-    font-size: 1.3rem;
-}
-.input-box .label{
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    pointer-events: none;
-    transition: .5s;
-}
-.login-btn{
-    height: 12%;
-    width: 100%;
-    margin-top: 8%;
+
+.header .title {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-.login-btn button{
-    height: 100%;
-    width: 60%;
-    border-radius: 12px;
-    border: none;
-    outline: px solid #fff;
-    background-color: #ff7a00;
-    color: #ffffff;
+
+.title img {
+    margin-right: 7px;
+    height: 50px;
+    width: 50px;
+}
+
+.title h2 {
     font-size: 2rem;
     font-weight: 600;
-    box-shadow: 6px 6px 10px #d07d2f, -6px -6px 10px #fa9a41;
+    color: #5e006d;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #5e006d;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* header end  */
+.main {
+    height: 120vh;
+    padding: 0 150px;
+    width: 100%;
+    background-color: #ffdddd;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.main-container .left-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.left-section .text-container {
+    width: 70%;
+    height: auto;
+    margin-top: 15%;
+}
+
+.text-container h3 {
+    font-size: 35px;
+    color: #5e006d;
+    margin-bottom: -18px;
+}
+
+.text-container h2 {
+    font-size: 55px;
+    color: #5e006d;
+    margin-bottom: -18px;
+}
+
+.text-container .btn {
+    display: flex;
+    margin-top: 30px;
+    height: 40px;
+    gap: 20px;
+}
+
+.btn button {
+    height: 100%;
+    width: 120px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #9505ac;
+    color: #ffff;
+    transition: .5s;
     cursor: pointer;
 }
-.login-btn button:active {
-    transform: translate(1px, 1px);
-  }
-  .forget-password{
-    width: 100%;
-    height: 20%;
+.btn button:hover{
+    background-color: #bc04d8;
+}
+
+/* left section end  */
+.main-container .right-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.shapes {
+    height: 500px;
+    width: 500px;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: end;
+    margin-right: 0px;
+}
+
+.shapes .shap {
+    height: 230px;
+    width: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -20px;
-  }
-  .forget-password div p{
-    color: #ffffff;
-    margin-right: 5px;
-  }
-  .forget-password  a{
-    text-decoration: none;
-    color: #ffff;
-    font-size: 0.8rem;
-  }
-/* image container stated here  */
-.image-section{
-    position: relative;
-    height: 100%;
-    width:  35%;
-    background-color: #fff;
-    border-radius: 25px 12px 12px 25px;
 }
-.image-section i{
-    position: absolute;
-    top: 5px;
-    right: 5px;
+
+.shapes .circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.shapes .semi-rectangle {
+    border-radius: 30% 0;
+    overflow: hidden;
+}
+
+.shapes .circle img {
+    padding: 20px;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+.shapes .semi-rectangle img {
+    padding: 20px;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+.shapes .red {
+    background-color: #f47272;
+}
+
+.shapes .pink {
+    background-color: #efaee8;
+}
+
+.shapes .skyblue {
+    background-color: #a1e8f1;
+}
+
+.shapes .blue {
+    background-color: #767add;
+}
+
+/* main section end  */
+.footer {
+    height: 60px;
+    width: 100%;
+    background-color: #ffdddd;
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    height: 100%;
+    padding: 0 115px;
+    width: 95%;
+    border-top: 2px solid #fdbcbc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.border .logos {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
-    font-weight: bolder;
-    z-index: 99;
+    gap: 15px;
+    color: #5e006d;
+}
+
+.logos .social a {
+    text-decoration: none;
+    transition: .5s;
+}
+.social i{
+    color: #5e006d;
+    transition: .5s;
+}
+.social i:hover{
+    color:  #bc04d8;
+}
+
+
+.border .copyright {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.copyright h6 {
+    margin-left: 500px;
+    font-size: 0.8rem;
+    color: #5e006d;
+}
+/* pop up started here  */
+#popteacher{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: transparent;
+   backdrop-filter: blur(8px);
+   transform: scale(0);
+   transition: .5s ease-in-out;
 
 }
-.image-section img{
+#popstudent{
+    height: 100vh;
+    width: 100%;
     position: absolute;
-    height: 100%;
-    right: -9.5px;
-    bottom: -8px;
+    top:0;
+    left: 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: transparent;
+   backdrop-filter: blur(8px);
+   transform: scale(0);
+   transition: .5s ease-in-out;
 }
-.pic{
+.popup-container .popup-main{
+    height: 70%;
+    width: 60%;
+    border-radius: 31px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #5e006d;
+}
+.popup-main .pop-left{
+    width: 50%;
+    height: 100%;
+    background-color:#f9caca ;
+    border-radius: 31px;
+}
+.pop-left .pop-heading{
+    margin-left: 25px;
+    height: 8.5%;
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5e006d;
+    font-size: 1rem;
+    font-weight: bolder;
+
+}
+.pop-heading img{
+    height: 80%;
+}
+.pop-left .pop-login{
+    top:3%;
+    left: 2%;
+    height: 85%;
+    width: 95%;
+}
+.pop-login .form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.pop-left .pop-login .form h1{
+    text-align: center;
+    width:34%;
+    color:#5e006d ;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #5e006d;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.pop-login .form .pop-input-box{
+    position: relative;
+    height:15%;
+    width: 80%;
+    margin:15px;
+    margin-top: 20px;
+    color: #5e006d;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.form .pop-input-box input{
+    position: relative;
+    bottom: 0px;
+    height: 68%;
+    width: 100%;
+    padding: 0 50px 0 13px;
+    outline: none;
+    color: #5e006d;
+    font-weight: 600;
+    border:none;
+    border-radius: 5px;
+
+}
+.pop-input-box input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #bdbdbd;
+}
+.pop-input-box .pop-input-icon{
+    position: absolute;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68%;
+    right: 0px;
+    top: 20px;
+    border-radius: 0 5px 5px 0;
+    background-color: #5e006d;
+}
+.pop-input-box .pop-input-icon i{
+    font-size: 1.4rem;
+}
+.form .pop-forget{
+    margin-top: -10px;
+    margin-left: 160px;
+}
+.pop-forget p{
+    font-size: 0.8rem;
+    color: #5e006d;
+}
+.pop-forget p a{
+    text-decoration: none;
+    color: #af05c9;
+    font-weight: 400;
+    transition: .5s;
+}
+.pop-forget p a:hover{
+    text-decoration: underline;
+}
+.form .pop-btn{
+    margin-top: 20px;
+    height: 10%;
+    width: 50%;
+}
+.pop-btn button{
+    height: 100%;
+    width: 100%;
+    border:none;
+    outline:none;
+    background-color: #5e006d;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .5s;
+}
+.pop-btn button:hover{
+    background-color: #a206ba;
+
+}
+.popup-main .pop-right{
     position: relative;
     width: 50%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color:#fff;
+    border-radius: 31px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 12px;
 }
-.pic i{
+.pop-right img{
+    height: 90%;
+    width: 90%;
+}
+.pop-right .close-icon{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top:-1px;
+    right: -1px;
+    height: 50px;
+    width: 50px;
+    border-radius: 0 29px 0 12px;
+    background-color: #5e006d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-icon i{
     font-size: 2rem;
     font-weight: 600;
+    cursor: pointer;
 }
-.pic img{
-    height: 80%;
+.pop-right span{
+    position: absolute;
+    bottom: 0px;
+    right:30px;
 }
-/* studentlogin */
-.section{
-    height: 100vh;
-    width: 100%;
+.pop-right span a{
+    height: 20px;
+    width: 155px;
     display: flex;
-}
-.section40{
-    height: 100vh;
-    width: 40%;
-}
-.section40 h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 30px;
-}
-.section40 .left_side_info{
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    position:absolute;
-    top: 40%;
-    left: 4%;
-    width: 32%;
-}
-.section40 .left_side_info h3{
-    font-size: 2rem;
-    color: #FF7A00;
-}
-.section40 .left_side_info h2{
-    font-size: 4rem;
-    margin: -10px;
-}
-.section40 .left_side_info h4{
-    font-size: 2rem;
-}
-a{
-    height: 3rem;
-    width: 10rem;
-    /* font-size: 200px; */
-}
-.section40 .left_side_info .buttons{
-    margin-top: 10px;
-}
-.section40 .left_side_info .buttons a {
-    padding: 8px 25px;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-left: 12px;
-    border-radius: 40px;
-    outline:none;
-    border:2px solid #FF7A00;
-    background-color: #FF7A00;
-    transition: .5s ease-in-out;
+    font-size: 0.7rem;
+    margin: 3px;
     text-decoration: none;
-    color:#ffffff;
 }
-.section40 .left_side_info .buttons a:hover{
-    border:2px solid #FF7A00;
-    background-color: #ffffff;
-    cursor: pointer;
-    color:#000000;
-    box-shadow: 0px 0px 15px #FF7A00;
-}
-.section60{
-    height: 95vh;
-    width: 60%;
-    background-color: #FF7A00;
-    border-bottom-left-radius: 40px;
-}
-.section60{
-position: relative;
-overflow: hidden;
-}
-.section60 ul{
-    position: absolute;
-    top: 50px;
-    right: 100px;
-}
-.section60 ul li{
-    position: relative;
-    display: inline;
-    margin-left: 25px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    /* color: #ffffff; */
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-.section60 ul li a{
-    text-decoration: none;
-    color: white;
-}
-.section60 ul li::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 3px ;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    bottom: -3px;
-    border-radius: 40px;
-    transform:scale(0);
-    transition: .6s ease-in-out;
-}
-.section60 ul li:hover::after{
-    transform: scaleX(1);
-}
-.section60 .img{
-    position: absolute;
-    bottom: -60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.section60 .img img{
-    height: 500px;
+.pop-right span a i{
+    font-size: 0.8rem;
+    margin-right: 3px;
+    margin-top: 3px;
 }
