@@ -22,6 +22,7 @@ body{
     padding: 5px 30px;
 }
 .header h2{
+    color: #5e006d;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -32,7 +33,11 @@ body{
 .nav i , .nav a{
     margin-right: 5px;
     text-decoration: none;
-     color: #FF7A00;
+     color: #5e006d;
+     transition: .5s;
+}
+.nav a:hover{
+    #af05c9
 }
 .first-section{
     width: 60%;    
@@ -55,6 +60,7 @@ body{
 }
 
 .first-section h2{
+    color: #af05c9;
     margin-bottom: 10px;
     font-size: 3rem;
 }
@@ -63,10 +69,11 @@ body{
     position: relative;
     width: 95%;
     height: 60px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #5e006d;
     background: transparent;
 }
 .input-box i{
+    color: #5e006d;
     position: absolute;
     font-size: 1.5rem;
     right: 12px;
@@ -84,7 +91,7 @@ body{
     outline: none;
 }
 .input-box input::placeholder{
-    color: black;
+    color: rgb(83, 79, 79);
 }
 .text-box{
     margin-top: 20px;
@@ -114,10 +121,14 @@ body{
     width: 30%;
     border: none;
     outline: none;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
-    background-color: rgb(255, 68, 0);
+    background-color: #5e006d;
+    transition: .5s ease-in-out;
+}
+.btn button:hover{
+    background-color:#af05c9;
 }
 .second-section{
     display: flex;
