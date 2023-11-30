@@ -461,3 +461,91 @@ body {
     margin-right: 3px;
     margin-top: 3px;
 }
+
+@media screen and (max-width: 1350px){
+    .title img {
+        height: 45px;
+        width: 45px;
+    }
+    .title h2 {
+        font-size: 1.7rem;
+    }
+    .nav a {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .text-container h3 {
+        font-size: 32px;
+    }
+    .text-container h2 {
+        font-size: 50px;
+    }
+    .text-container .btn {
+        display: flex;
+        margin-top: 30px;
+        height: 37px;
+        gap: 17px;
+    }
+}
+@media screen and (max-width: 1111px){
+    .header {
+        padding: 0 120px;
+    }
+    .main {
+        height: 120vh;
+        padding: 0 120px;
+        width: 100%;
+        background-color: #ffdddd;
+    }
+    .left-section .text-container {
+        width: 90%;
+    }
+    .shapes {
+        height: 400px;
+        width: 400px;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px;
+    }
+    .shapes .shap {
+        height: 180px;
+        width: 180px;
+    }
+    .shapes .circle img {
+        padding: 20px;
+        height: 220px;
+    }
+    .shapes .semi-rectangle img {
+        padding: 20px;
+        height: 220px;
+    }
+    .text-container .btn {
+        margin-top: 22px;
+        height: 32px;
+        gap: 14px;
+    }
+    .border {
+        height: 100%;
+        padding: 0 95px;
+        width: 80%;
+        border-top: 2px solid #fdbcbc;
+        display: flex;
+        justify-content: space-between;
+    }
+    .border .logos {
+        font-size: 1.5rem;
+        gap: 15px;
+        color: #5e006d;
+    }
+    .copyright h6 {
+        margin-left: 100px;
+        font-size: 0.8rem;
+        color: #5e006d;
+    }
+}
+@media screen and (max-width: 1024px){
+    .left-section .text-container {
+        width: 90%;
+        height: auto;
+        margin-top: 15%;
+    }
+}
