@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="/asset/image/icons8-smart-card-64.png">
     <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -50,7 +51,8 @@
         <div class="border">
             <div class="logos">
                 <div class="insta social"><a href="https://instagram.com/master_code_1?igshid=MzRlODBiNWFlZA=="><i
-                            class='bx bxl-instagram-alt'></i></a></div>
+                            class='bx bxl-instagram-alt'></i></a>
+                </div>
                 <div class="github social"><a href="https://github.com/Akashkumar9508"><i class='bx bxl-github'></i></a>
                 </div>
                 <div class="fackbook social"><a href="https://twitter.com/akashkumar_9508"><i
@@ -75,7 +77,7 @@
                             <h1>Login</h1>
                             <div class="pop-input-box">
                                 <p>Teacher ID</p>
-                                <input type="text"placeholder="Enter Your teacher ID">
+                                <input type="text" placeholder="Enter Your teacher ID">
                                 <div class="pop-input-icon">
                                     <i class='bx bx-id-card' style='color:#ffffff'></i>
                                 </div>
@@ -101,13 +103,12 @@
                     <div class="close-icon">
                         <i class='bx bx-x' style='color:#ffffff' id="teacherclose" onclick="teacherclosebtn()"></i>
                     </div>
-                    <span><a href=""><i class='bx bx-envelope'style='color:#5e006d'></i>smartattend@gmail.com</a></span>
+                    <span><a href=""><i class='bx bx-envelope'
+                                style='color:#5e006d'></i>smartattend@gmail.com</a></span>
                 </div>
             </div>
         </div>
-
-
-
+        <!-- pop student  -->
         <div class="popup-container " id="popstudent">
             <div class="popup-main">
                 <div class="pop-left">
@@ -120,7 +121,7 @@
                             <h1>Login</h1>
                             <div class="pop-input-box">
                                 <p>Student ID</p>
-                                <input type="text"placeholder="Enter Your Student ID">
+                                <input type="text" placeholder="Enter Your Student ID">
                                 <div class="pop-input-icon">
                                     <i class='bx bx-id-card' style='color:#ffffff'></i>
                                 </div>
@@ -129,7 +130,7 @@
                                 <p>DOB</p>
                                 <input type="text" placeholder="Enter Your Date of Birth">
                                 <div class="pop-input-icon">
-                                    <i class='bx bx-calendar' style='color:#ffffff' ></i>
+                                    <i class='bx bx-calendar' style='color:#ffffff'></i>
                                 </div>
                             </div>
                             <div class="pop-btn">
@@ -143,11 +144,13 @@
                     <div class="close-icon">
                         <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="studentclosebtn()"></i>
                     </div>
-                    <span><a href=""><i class='bx bx-envelope'style='color:#5e006d'></i>smartattend@gmail.com</a></span>
+                    <span><a href=""><i class='bx bx-envelope'
+                                style='color:#5e006d'></i>smartattend@gmail.com</a></span>
                 </div>
             </div>
         </div>
         <script src="/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
