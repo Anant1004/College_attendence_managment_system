@@ -1422,6 +1422,9 @@ body {
     .pop-forget p {
         font-size: 0.5rem;
     }
+    .form .pop-input-box input {
+        font-size: 0.6rem;
+    }
 }
 
 @media screen and (max-width: 345px) {
