@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
     <div class="header">
         <div class="title">
@@ -20,7 +18,7 @@
         <div class="nav">
             <a href="/asset/pages/contact.html">Contact</a>
             <a href="#">About</a>
-            <a href="#">Uses</a>
+            <a href="#" id="n3">Uses</a>
         </div>
     </div>
     <!-- header end -->
@@ -50,15 +48,17 @@
     <div class="footer">
         <div class="border">
             <div class="logos">
-                <div class="insta social"><a href="https://instagram.com/master_code_1?igshid=MzRlODBiNWFlZA=="><i
-                            class='bx bxl-instagram-alt'></i></a>
+                <div class="insta social">
+                    <a href="https://instagram.com/master_code_1?igshid=MzRlODBiNWFlZA=="><i class='bx bxl-instagram-alt'></i></a>
                 </div>
-                <div class="github social"><a href="https://github.com/Akashkumar9508"><i class='bx bxl-github'></i></a>
+                <div class="github social">
+                    <a href="https://github.com/Akashkumar9508"><i class='bx bxl-github'></i></a>
                 </div>
-                <div class="fackbook social"><a href="https://twitter.com/akashkumar_9508"><i
-                            class='bx bxl-twitter'></i></a></div>
-                <div class="fackbook social"><a href="https://www.youtube.com/@codeon-9508"><i
-                            class='bx bxl-youtube'></i></a></div>
+                <div class="fackbook social">
+                    <a href="https://twitter.com/akashkumar_9508"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="fackbook social">
+                    <a href="https://www.youtube.com/@codeon-9508"><i class='bx bxl-youtube'></i></a></div>
             </div>
             <div class="copyright">
                 <h6>© Copyright claim 2023 Smart Attend</h6>
@@ -68,6 +68,9 @@
         <div class="popup-container " id="popteacher">
             <div class="popup-main">
                 <div class="pop-left">
+                    <div class="left-close " onclick="studentclosebtn()">
+                        <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="teacherclosebtn()"></i>
+                    </div>
                     <div class="pop-heading">
                         <img src="/asset/image/icons8-smart-card-64.png" alt="">
                         <h3>Smart Attend..</h3>
@@ -112,6 +115,9 @@
         <div class="popup-container " id="popstudent">
             <div class="popup-main">
                 <div class="pop-left">
+                    <div class="left-close " onclick="studentclosebtn()">
+                        <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="studentclosebtn()"></i>
+                    </div>
                     <div class="pop-heading">
                         <img src="/asset/image/icons8-smart-card-64.png" alt="">
                         <h3>Smart Attend..</h3>
@@ -144,13 +150,11 @@
                     <div class="close-icon">
                         <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="studentclosebtn()"></i>
                     </div>
-                    <span><a href=""><i class='bx bx-envelope'
-                                style='color:#5e006d'></i>smartattend@gmail.com</a></span>
+                    <span><a href=""><i class='bx bx-envelope'style='color:#5e006d'></i>smartattend@gmail.com</a></span>
                 </div>
             </div>
         </div>
         <script src="/script.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
-
 </html>
