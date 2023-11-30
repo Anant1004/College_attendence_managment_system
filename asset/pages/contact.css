@@ -20,6 +20,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 5px 30px;
+    background-color: #fff;;
 }
 .header h2{
     color: #5e006d;
@@ -189,7 +190,8 @@ body{
         width: 100%;
     }
     .second-section img{
-        width:60% ;
+        width:80% ;
+        height: 60%;
     }
     .container{
         /* background-color: red; */
@@ -208,6 +210,7 @@ body{
         display: block;
         height: 50vh;
     }
+    
     .first-section{
         width: 100%;    
         display: flex;
@@ -219,6 +222,9 @@ body{
     .second-section{
         display: flex;
         width: 100%;
+    }
+    .second-section img{
+        width: 85%;
     }
     .container{
         width:350px ;
