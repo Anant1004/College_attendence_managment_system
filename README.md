@@ -1,7 +1,8 @@
 # Smart Attend
 
+Smart Attend is a web application designed to track attendance in a smart way. It provides separate login interfaces for teachers and students.
+
 > It is in building phase for the project Smart Attend !
-> Smart Attend is a web application designed to track attendance in a smart way. It provides separate login interfaces for teachers and students.
 
 ## Version
 
@@ -32,4 +33,3 @@
 ## License
 
 Copyright © 2022. All Rights Reserved to Smart Attend Team
-
