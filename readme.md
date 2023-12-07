@@ -1,1 +1,0 @@
-#This is the attendance maagemnt system of the website#
