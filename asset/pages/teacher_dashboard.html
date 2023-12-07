@@ -3,104 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>teacher-dashboard</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/asset/pages/teacher_dashboard.css" />
+    <title>Teacher dashboard</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <div class="full-container">
-      <!-- top pannel started here -->
-      <div class="top-section" oncontextmenu"return false">
-        <div class="dashboard">
-          <span>DASHBOARD</span>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <i class='bx bx-menu'></i>
+            <img src="/asset/image/icons8-smart-card-64.png" alt="">
+            <h2>Teacher dashboard</h2>
+            
         </div>
-        <div class="college-detial">
-          <span>B.S CITY COLLEGE</span>
-          <img src="/asset/image/college-logo.png" alt="" />
+        <div class="nav">
+            <a href="/asset/pages/contact.html">Back to home</a>
         </div>
-      </div>
-      <!-- left pannel started here -->
-      <div class="left-section"  oncontextmenu"return false">
-        <div class="user-name-section">
-          <div class="circle">
-            <i class='bx bx-user' ></i>
-          </div>
-          <span>teacher name</span>
-        </div>
-        <div class="menu-section">
-          <div class="each-menu">
-            <i class='bx bxs-home' ></i><a href=""
-              >Home</a
-            >
-          </div>
-          <div class="each-menu">
-            <i class='bx bx-list-ul' ></i><a href="">Semester</a>
-          </div>
-          <div class="each-menu">
-            <i class='bx bxs-graduation' ></i><a href=""
-              >Department</a
-            >
-          </div>
-          <div class="each-menu">
-            <i class='bx bxs-notification' ></i><a href=""
-              >Notice</a
-            >
-          </div>
-          <div class="each-menu">
-            <i class='bx bxs-calendar' ></i><a href=""
-              >Calander</a
-            >
-          </div>
-        </div>
-        <div class="logout-section">
-          <span><i class='bx bx-log-out-circle' undefined ></i></span>
-          <a href="/index.html">Logout</a>
-        </div>
-      </div>
-      <!-- main section started here -->
-      <div class="main-section"  oncontextmenu="return false">
-        <div class="add-student">
-          <button>Add Student</button>
-        </div>
-        <div class="card-box">
-          <!-- attendence card started here  -->
-          <div class="card">
-            <div class="topic">
-              <h1>Attendence</h1>
-            </div>
-            <span>select semester :-</span>
-            <div class="sem-box-section">
-              <button class="small-box">1</button>
-              <button class="small-box">2</button>
-              <button class="small-box">3</button>
-              <button class="small-box">4</button>
-              <button class="small-box">5</button>
-              <button class="small-box">6</button>
-              <button class="small-box">7</button>
-              <button class="small-box">8</button>
-            </div>
-            <button>Make Attendence</button>
-          </div>
-           <!-- notice card started here -->
-          <div class="card">
-            <div class="topic">
-              <h1>Notice</h1>
-            </div>
-            <div class="select-sem">
-              <div class="button">Select Semester <i class='bx bxs-down-arrow' style='color:#ffffff'  ></i>
-              </div>
-            </div>
-            <div class="text-area">
-              <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Notice Here..."></textarea>
-            </div>
-            <button id="notice-btn">Post Notice</button>
-          </div>
-          <div class="card">
-            <div class="topic"><h1>Attendence</h1></div>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
   </body>
 </html>

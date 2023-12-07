@@ -514,7 +514,6 @@ body {
     margin-right: 3px;
     margin-top: 3px;
 }
-
 @media screen and (max-width:1525px) {
     .popup-container .popup-main {
         height: 60%;
