@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Attend</title>
@@ -9,152 +9,162 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="pages/contact.html">
+    <link rel="stylesheet" href="scripts/script.js">
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="pages/contact.html" as="document"> 
+    <link rel="preload" href="scripts/script.js" as="script">
+  </head>
+  <body>
     <div class="header">
-        <div class="title">
-            <h2>Smart Attend</h2>
-        </div>
-        <div class="nav">
-            <a href="/pages/contact.html">Contact</a>
-            <a href="#">About</a>
-            <a href="#" id="n3">Uses</a>
-        </div>
+      <div class="title">
+        <h2>Smart Attend</h2>
+      </div>
+      <nav class="nav">
+        <a href="/pages/contact.html">Contact</a>
+        <a href="#">About</a>
+        <a href="#" id="n3">Uses</a>
+      </nav>
     </div>
     <!-- header end -->
     <div class="main">
-        <div class="main-container">
-            <div class="left-section">
-                <div class="text-container">
-                    <h3>Make Attendence On</h3>
-                    <h2>Smart Attend</h2>
-                    <h3>Track Attendence...</h3>
-                    <div class="btn">
-                        <button type="submit" onclick="teacherbtn()">Teacher</button>
-                        <button type="submit" onclick="studentbtn()">Student</button>
-                    </div>
-                </div>
+      <div class="main-container">
+        <div class="left-section">
+          <div class="text-container">
+            <h3>Make Attendence on</h3>
+            <h2>Smart Attend</h2>
+            <h3 class="bubble-animation">
+                        To Track Attendance 
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </h3>
+            <div class="btn">
+              <button type="submit" onclick="teacherbtn()">Teacher</button>
+              <button type="submit" onclick="studentbtn()">Student</button>
             </div>
-            <div class="right-section">
-                <div class="shapes">
-                    <div class="shap circle red"><img src="/assets/student1.png" alt=""></div>
-                    <div class="shap semi-rectangle blue"><img src="/assets/s2.png" alt=""></div>
-                    <div class="shap semi-rectangle pink"><img src="/assets/stdudent2.png" alt=""></div>
-                    <div class="shap circle skyblue"><img src="/assets/s1.png" alt=""></div>
-                </div>`
-            </div>
+          </div>
         </div>
+        <div class="right-section">
+          <div class="shapes">
+            <div class="shap circle red"><img src="/assets/student1.png" alt=""></div>
+            <div class="shap semi-rectangle blue"><img src="/assets/s2.png" alt=""></div>
+            <div class="shap semi-rectangle pink"><img src="/assets/stdudent2.png" alt=""></div>
+            <div class="shap circle skyblue"><img src="/assets/s1.png" alt=""></div>
+          </div>`
+        </div>
+      </div>
     </div>
     <div class="footer">
-        <div class="border">
-            <div class="logos">
-                <div class="insta social">
-                    <a href=""><i class='bx bxl-instagram-alt'></i></a>
-                </div>
-                <div class="github social">
-                    <a href=""><i class='bx bxl-github'></i></a>
-                </div>
-                <div class="fackbook social">
-                    <a href=""><i class='bx bxl-twitter'></i></a>
-                </div>
-                <div class="fackbook social">
-                    <a href=""><i class='bx bxl-youtube'></i></a></div>
-            </div>
-            <div class="copyright">
-                <h6>Copyright © 2022. All Rights Reserved to Smart Attend Team</h6>
-            </div>
+      <div class="border">
+        <div class="logos">
+          <div class="insta social">
+            <a href=""><i class='bx bxl-instagram-alt'></i></a>
+          </div>
+          <div class="github social">
+            <a href=""><i class='bx bxl-github'></i></a>
+          </div>
+          <div class="fackbook social">
+            <a href=""><i class='bx bxl-twitter'></i></a>
+          </div>
+          <div class="fackbook social">
+            <a href=""><i class='bx bxl-youtube'></i></a></div>
         </div>
-        <!-- popup section  -->
-        <div class="popup-container " id="popteacher">
-            <div class="popup-main">
-                <div class="pop-left">
-                    <div class="left-close " onclick="studentclosebtn()">
-                        <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="teacherclosebtn()"></i>
-                    </div>
-                    <div class="pop-heading">
-                        <img src="/asset/icons8-smart-card-64.png" alt="">
-                        <h3>Smart Attend..</h3>
-                    </div>
-                    <div class="pop-login">
-                        <form action="" class="form">
-                            <h1>Login</h1>
-                            <div class="pop-input-box">
-                                <p>Teacher ID</p>
-                                <input type="text" placeholder="Enter Your teacher ID">
-                                <div class="pop-input-icon">
-                                    <i class='bx bx-id-card' style='color:#ffffff'></i>
-                                </div>
-                            </div>
-                            <div class="pop-input-box">
-                                <p>Password</p>
-                                <input type="password" placeholder="Enter Your Password">
-                                <div class="pop-input-icon">
-                                   <i class='bx bx-lock-alt' style='color:#ffffff'  ></i>
-                                </div>
-                            </div>
-                            <div class="pop-forget">
-                                <p>Forget Password?<a href="#">Click Here</a></p>
-                            </div>
-                            <div class="pop-btn">
-                                <button type="submit">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="pop-right">
-                    <img src="/assets/login.png" alt="">
-                    <div class="close-icon">
-                        <i class='bx bx-x' style='color:#ffffff' id="teacherclose" onclick="teacherclosebtn()"></i>
-                    </div>
-                    <span><a href=""><i class='bx bx-envelope'
-                                style='color:#5e006d'></i>smartattend@gmail.com</a></span>
-                </div>
-            </div>
+        <div class="copyright">
+          <h6>Copyright © 2022. All Rights Reserved to Smart Attend Team</h6>
         </div>
-        <!-- pop student  -->
-        <div class="popup-container " id="popstudent">
-            <div class="popup-main">
-                <div class="pop-left">
-                    <div class="left-close " onclick="studentclosebtn()">
-                        <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="studentclosebtn()"></i>
-                    </div>
-                    <div class="pop-heading">
-                        <img src="/assets/icons8-smart-card-64.png" alt="">
-                        <h3>Smart Attend..</h3>
-                    </div>
-                    <div class="pop-login">
-                        <form action="" class="form">
-                            <h1>Login</h1>
-                            <div class="pop-input-box">
-                                <p>Student ID</p>
-                                <input type="text" placeholder="Enter Your Student ID">
-                                <div class="pop-input-icon">
-                                    <i class='bx bx-id-card' style='color:#ffffff'></i>
-                                </div>
-                            </div>
-                            <div class="pop-input-box">
-                                <p>DOB</p>
-                                <input type="text" placeholder="Enter Your Date of Birth">
-                                <div class="pop-input-icon">
-                                    <i class='bx bx-calendar' style='color:#ffffff'></i>
-                                </div>
-                            </div>
-                            <div class="pop-btn">
-                                <button type="submit">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="pop-right">
-                    <img src="/assets/login.png" alt="">
-                    <div class="close-icon">
-                        <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="studentclosebtn()"></i>
-                    </div>
-                    <span><a href=""><i class='bx bx-envelope'style='color:#5e006d'></i>smartattend@gmail.com</a></span>
-                </div>
+      </div>
+      <!-- popup section  -->
+      <div class="popup-container " id="popteacher">
+        <div class="popup-main">
+          <div class="pop-left">
+            <div class="left-close " onclick="studentclosebtn()">
+              <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="teacherclosebtn()"></i>
             </div>
+            <div class="pop-heading">
+              <img src="/asset/icons8-smart-card-64.png" alt="">
+              <h3>Smart Attend..</h3>
+            </div>
+            <div class="pop-login">
+              <form action="" class="form">
+                <h1>Login</h1>
+                <div class="pop-input-box">
+                  <p>Teacher ID</p>
+                  <input type="text" placeholder="Enter Your teacher ID">
+                  <div class="pop-input-icon">
+                    <i class='bx bx-id-card' style='color:#ffffff'></i>
+                  </div>
+                </div>
+                <div class="pop-input-box">
+                  <p>Password</p>
+                  <input type="password" placeholder="Enter Your Password">
+                  <div class="pop-input-icon">
+                    <i class='bx bx-lock-alt' style='color:#ffffff'  ></i>
+                  </div>
+                </div>
+                <div class="pop-forget">
+                  <p>Forget Password?<a href="#">Click Here</a></p>
+                </div>
+                <div class="pop-btn">
+                  <button type="submit">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="pop-right">
+            <img src="/assets/login.png" alt="">
+            <div class="close-icon">
+              <i class='bx bx-x' style='color:#ffffff' id="teacherclose" onclick="teacherclosebtn()"></i>
+            </div>
+            <span><a href=""><i class='bx bx-envelope'
+              style='color:#5e006d'></i>smartattend@gmail.com</a></span>
+          </div>
         </div>
-        <script src="scripts/script.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+      </div>
+      <!-- pop student  -->
+      <div class="popup-container " id="popstudent">
+        <div class="popup-main">
+          <div class="pop-left">
+            <div class="left-close " onclick="studentclosebtn()">
+              <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="studentclosebtn()"></i>
+            </div>
+            <div class="pop-heading">
+              <img src="/assets/icons8-smart-card-64.png" alt="">
+              <h3>Smart Attend..</h3>
+            </div>
+            <div class="pop-login">
+              <form action="" class="form">
+                <h1>Login</h1>
+                <div class="pop-input-box">
+                  <p>Student ID</p>
+                  <input type="text" placeholder="Enter Your Student ID">
+                  <div class="pop-input-icon">
+                    <i class='bx bx-id-card' style='color:#ffffff'></i>
+                  </div>
+                </div>
+                <div class="pop-input-box">
+                  <p>DOB</p>
+                  <input type="text" placeholder="Enter Your Date of Birth">
+                  <div class="pop-input-icon">
+                    <i class='bx bx-calendar' style='color:#ffffff'></i>
+                  </div>
+                </div>
+                <div class="pop-btn">
+                  <button type="submit">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="pop-right">
+            <img src="/assets/login.png" alt="">
+            <div class="close-icon">
+              <i class='bx bx-x' style='color:#ffffff' id="studentclose" onclick="studentclosebtn()"></i>
+            </div>
+            <span><a href=""><i class='bx bx-envelope'style='color:#5e006d'></i>smartattend@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+      <script src="scripts/script.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
