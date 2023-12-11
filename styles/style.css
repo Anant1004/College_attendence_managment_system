@@ -33,6 +33,13 @@ body {
   align-items: center;
 }
 
+.header h2 a {
+  text-decoration: none;
+  color: #5e006d;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .title img {
   margin-right: 7px;
   height: 50px;
@@ -1526,4 +1533,3 @@ body {
   animation: bubble 1.5s ease-in-out infinite;
   animation-delay: 0.6s; /* Delay for the third dot */
 }
-
