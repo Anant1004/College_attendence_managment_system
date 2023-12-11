@@ -33,6 +33,13 @@ body {
   align-items: center;
 }
 
+.header h2 a {
+  text-decoration: none;
+  color: #5e006d;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .title img {
   margin-right: 7px;
   height: 50px;
