@@ -11,6 +11,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="header">
@@ -28,7 +29,7 @@
       </nav>
     </div>
     <div class="hero">
-    <div class="first-section">
+    <div class="first-section" data-aos="fade-right">
       <div class="container">
         <h2>Contact Us</h2>
         <div class="input-box">
@@ -53,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div class="second-section">
+    <div class="second-section" data-aos="fade-left">
       <img src="/assets/CONTACT IMAGE.png" alt="image" />
     </div>
   </div>
@@ -77,5 +78,9 @@
         </div>
       </div>
     <script src="/scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
