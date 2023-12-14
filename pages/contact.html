@@ -6,13 +6,16 @@
     <title>Contacts</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
     <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/style.css">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="header">
+      <div class="title">
       <h2>
         <a href="/index.html">Smart Attend</a>
       </h2>
@@ -21,38 +24,68 @@
         <i class="bx bx-arrow-back"></i>
         <a href="/index.html">Back To Home</a>
       </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/index.html ">Home</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="#">Uses</a></li>
+        </ul>
+      </nav>
     </div>
-    <form onsubmit="sendEmail(); reset(); return false;">
-      <div class="first-section">
-        <div class="container">
-          <h2>Contact Us</h2>
-          <div class="input-box">
-            <i class="bx bx-user"></i>
-            <input type="text" placeholder="Enter your Name" />
-          </div>
-          <div class="input-box">
-            <i class="bx bx-envelope"></i>
-            <input type="Email" placeholder="Enter your Email" />
-          </div>
-          <div class="text-box">
-            <textarea
-              name=""
-              id="textarea"
-              cols="30"
-              rows="10"
-              placeholder="Enter your message!"
-            ></textarea>
-          </div>
-          <div class="btn">
-            <button type="submit">Submit</button>
-          </div>
+    <div class="hero">
+    <div class="first-section" data-aos="fade-right">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="input-box">
+          <i class="bx bx-user"></i>
+          <input type="text" placeholder="Enter your Name" />
+        </div>
+        <div class="input-box">
+          <i class="bx bx-envelope"></i>
+          <input type="Email" placeholder="Enter your Email" />
+        </div>
+        <div class="text-box">
+          <textarea
+            name=""
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Enter your message!"
+          ></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit" class="button">Submit</button>
         </div>
       </div>
-    </form>
-      <div class="second-section">
-        <img src="/assets/CONTACT IMAGE.png" alt="image" />
+    </div>
+    <div class="second-section" data-aos="fade-left">
+      <img src="/assets/CONTACT IMAGE.png" alt="image" />
+    </div>
+  </div>
+    <div class="footer">
+      <div class="border">
+        <div class="logos">
+          <div class="insta social">
+            <a href="https://www.instagram.com/akash_yadav_mist/"><i class='bx bxl-instagram-alt'></i></a>
+          </div>
+          <div class="github social">
+            <a href="https://github.com/Akashkumar9508"><i class='bx bxl-github'></i></a>
+          </div>
+          <div class="fackbook social">
+            <a href=""><i class='bx bxl-twitter'></i></a>
+          </div>
+          <div class="fackbook social">
+            <a href="https://www.youtube.com/@codeon-9508"><i class='bx bxl-youtube'></i></a></div>
+        </div>
+        <div class="copyright">
+          <h6>Copyright © 2023. All Rights Reserved to Smart Attend Team</h6>
+        </div>
       </div>
     <script src="/scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
