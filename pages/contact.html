@@ -16,40 +16,43 @@
       <h2>
         <a href="/index.html">Smart Attend</a>
       </h2>
-
+      
       <div class="nav">
         <i class="bx bx-arrow-back"></i>
         <a href="/index.html">Back To Home</a>
       </div>
     </div>
-    <div class="first-section">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <div class="input-box">
-          <i class="bx bx-user"></i>
-          <input type="text" placeholder="Enter your Name" />
-        </div>
-        <div class="input-box">
-          <i class="bx bx-envelope"></i>
-          <input type="Email" placeholder="Enter your Email" />
-        </div>
-        <div class="text-box">
-          <textarea
-            name=""
-            id="textarea"
-            cols="30"
-            rows="10"
-            placeholder="Enter your message!"
-          ></textarea>
-        </div>
-        <div class="btn">
-          <button type="submit">Submit</button>
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <div class="first-section">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="input-box">
+            <i class="bx bx-user"></i>
+            <input type="text" placeholder="Enter your Name" />
+          </div>
+          <div class="input-box">
+            <i class="bx bx-envelope"></i>
+            <input type="Email" placeholder="Enter your Email" />
+          </div>
+          <div class="text-box">
+            <textarea
+              name=""
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message!"
+            ></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="second-section">
-      <img src="/assets/CONTACT IMAGE.png" alt="image" />
-    </div>
+    </form>
+      <div class="second-section">
+        <img src="/assets/CONTACT IMAGE.png" alt="image" />
+      </div>
     <script src="/scripts/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
