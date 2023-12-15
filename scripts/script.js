@@ -1,24 +1,5 @@
-const popstudent = document.getElementById("popstudent");
-const popteacher = document.getElementById("popteacher");
-const teacherclose = document.getElementById("teacherclose");
-const studentclose = document.getElementById("studentclose");
 const form = document.querySelector("form");
-const fullName = document.getElementById("name");
-const email = document.getElementById("email")
-const message = document.getElementById("textarea")
-
-function teacherbtn(){
-  popteacher.style.transform = "scale(1)";
-}
-function studentbtn(){
-  popstudent.style.transform = "scale(1)";
-}
-function teacherclosebtn(){
-  popteacher.style.transform = "scale(0)";
-}
-function studentclosebtn(){
-  popstudent.style.transform = "scale(0)";
-}
+// contact section started here 
 
 function sendEmail(){
  if(fullName.value===""){
@@ -53,8 +34,29 @@ function sendEmail(){
 );
 }
 }
-
 form.addEventListener("submit",(e)=>{
   e.preventDefault();
   sendEmail();
 })
+// popup section started here 
+
+const popupform = document.getElementById('popup-form');
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+const mainpopcontainer=document.getElementById("pop-main-container");
+const popclose=document.querySelector(".close-btn");
+popclose.addEventListener('click',()=>{
+  mainpopcontainer.style.transform = "scale=(0)";
+})
+function loginbtn(){
+  mainpopcontainer.style.transform = "scale(1)";
+}
