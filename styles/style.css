@@ -119,7 +119,7 @@ body {
 
 .header .title {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -137,6 +137,11 @@ body {
 }
 
 .title h2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   font-weight: 600;
   color: #5e006d;
@@ -562,12 +567,73 @@ footer h6 {
 }
 
 @media screen and (max-width: 1350px) {
+
 }
 
 @media screen and (max-width: 1225px) {
+
+  .header{
+    padding: 0 120px;
+  }
+  .main {
+    height: 95vh;
+    padding: 0 120px;
+  }
+  .left-section , .right-section{
+    height: 100%;
+  }
+
+  .shapes {
+    grid-template-columns: 210px 210px;
+    grid-template-rows: 210px 210px;
+  }
+  .shapes .shap {
+    height: 200px;
+    width: 200px;
+  }
+  .shapes .circle img {
+    height: 240px;
+  }
+  .shapes .semi-rectangle img {
+    height: 240px;
+}
+footer{
+  padding: 0 120px;
+}
+.animate-circles {
+  height:100vh;
+}
+.pop-main-container {
+  height: 100vh;
+}
 }
 
 @media screen and (max-width: 1111px) {
+  body {
+    height: 90vh;
+  }
+  .header{
+    padding: 0 100px;
+  }
+  .main {
+    height: 100vh;
+    padding: 0 100px;
+  }
+  .left-section {
+    height: 100%;
+  }
+  .right-section{
+    height: 100%;
+  }
+  footer{
+    padding: 0 100px;
+  }
+  .animate-circles {
+    height:100vh;
+  }
+  .pop-main-container {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -589,6 +655,57 @@ footer h6 {
 }
 
 @media screen and (max-width: 425px) {
+  .header{
+    padding: 0 20px;
+    position: relative;
+  }
+  .header h2 a {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .nav ul li {
+    font-size: 0.9rem;
+  }
+  .main {
+    padding: 0 20px;
+  }
+  .main-container {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text-container h3 {
+    font-size: 30px;
+   }
+  .text-container h2 {
+    font-size: 50px;
+  }
+  .shapes {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+  }
+  .shapes .shap {
+    height: 140px;
+    width: 140px;
+  }
+  .shapes .circle img {
+    height: 180px;
+  }
+  .shapes .semi-rectangle img {
+    height: 180px;
+}
+footer {
+  padding: 0 20px;
+  height: 40px;
+}
+.social-media-footer a i {
+  font-size: 1rem;
+}
+footer h6 {
+  color: #5e006d;
+  font-size: 0.5rem;
 }
 
 @media screen and (max-width: 345px) {
