@@ -35,11 +35,11 @@
         <h2>Contact Us</h2>
         <div class="input-box">
           <i class="bx bx-user"></i>
-          <input type="text" placeholder="Enter your Name" />
+          <input type="text" placeholder="Enter your Name" id="name" />
         </div>
         <div class="input-box">
           <i class="bx bx-envelope"></i>
-          <input type="Email" placeholder="Enter your Email" />
+          <input type="Email" placeholder="Enter your Email" id="email" />
         </div>
         <div class="text-box">
           <textarea
@@ -81,8 +81,8 @@
       </div>
     <script src="/scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>AOS.init();</script>
   </body>
 </html>
