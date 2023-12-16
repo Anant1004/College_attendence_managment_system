@@ -1,5 +1,8 @@
-const form = document.querySelector("form");
-// contact section started here 
+const form = document.querySelector("#contact-form");
+const fullName=document.getElementById("fullName");
+const email=document.getElementById("email");
+const message=document.getElementById("textarea");
+
 
 function sendEmail(){
  if(fullName.value===""){
