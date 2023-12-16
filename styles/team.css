@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Poppins:wght@200;400&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffdddd;
 }
+
 .header {
     background-color: #fff;
     position: fixed;
@@ -21,7 +23,7 @@ body {
     align-items: center;
     box-shadow: 0 6px 10px #fdbcbc;
     z-index: 2;
-    }
+}
 
 .header .title {
     display: flex;
@@ -54,6 +56,7 @@ body {
     align-items: center;
     gap: 30px;
 }
+
 .nav ul {
     display: flex;
     list-style: none;
@@ -66,10 +69,12 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 .nav ul li a {
-text-decoration: none;
-color: #5e006d;
+    text-decoration: none;
+    color: #5e006d;
 }
+
 .nav ul li::after {
     position: absolute;
     left: 0;
@@ -82,6 +87,7 @@ color: #5e006d;
     transform: scale(0);
     transition: 0.5s ease-in-out;
 }
+
 .nav ul li:hover::after {
     transform: scaleX(1);
 }
