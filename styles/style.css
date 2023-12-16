@@ -212,7 +212,7 @@ body {
 }
 
 .main-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
 }
@@ -706,7 +706,10 @@ footer h6 {
   }
 
   .main {
+    height: 100vh;
     padding: 0 20px;
+    width: 100%;
+    background-color: #ffdddd;
   }
 
   .main-container {
@@ -745,7 +748,7 @@ footer h6 {
 
   footer {
     padding: 0 20px;
-    height: 40px;
+    height: 25px;
   }
 
   .social-media-footer a i {
