@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher dashboard</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="title">
-          <i class='bx bx-menu'></i>
-            <img src="/asset/image/icons8-smart-card-64.png" alt="">
-            <h2>Teacher dashboard</h2>
-            
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="/styles/teacher_Dashboard.css">
+</head>
+
+<body>
+    <div id="navigation">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
         </div>
-        <div class="nav">
-            <a href="/asset/pages/contact.html">Back to home</a>
-        </div>
+        <ul class="sidepanel" id="sidepanel">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Contact</li>
+            <li><a href="#"></a>Team</li>
+        </ul>
     </div>
-    </div>
-  </body>
+    <script src="/scripts/teacher_Dashboard.js"></script>
+</body>
+
 </html>
