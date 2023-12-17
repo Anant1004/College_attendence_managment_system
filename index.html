@@ -102,9 +102,9 @@
               <i class="fa-brands fa-google-plus-g"></i></a>
           </div>
           <span>or use your email for registeration</span>
-          <input type="text" placeholder="University Id" class="pop-input" />
-          <input type="password" placeholder="Password" class="pop-input" />
-          <button>Sign In</button>
+          <input id="studId" type="text" placeholder="University Id" class="pop-input" />
+          <input id="studPass" type="password" placeholder="Password" class="pop-input" />
+          <button id="btn" type="submit" onclick="submitFun()">Sign In</button>
           <a href="" class="close-btn">Close</a>
         </form>
       </div>
@@ -151,6 +151,7 @@
   <script>
     AOS.init();
   </script>
+  <script src="scripts/login.js"></script>
 </body>
 
 </html>
