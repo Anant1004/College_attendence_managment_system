@@ -26,7 +26,7 @@ body {
 .bar {
     height: 4px;
     width: 100%;
-    background-color: #5e006d;
+    background-color: #5E006D;
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -41,10 +41,8 @@ body {
 }
 
 .icon .bar {
-    background-color: #5e006d;
-}
-
-.icon #bar1 {
+    background-color: #5E006D;
+}.icon #bar1 {
     transform: translateY(4px) rotate(-45deg);
 }
 
@@ -98,7 +96,6 @@ body {
     height: 100%;
     width: 20%;
     display: flex;
-    /* background-color: red; */
     justify-content: end;
     gap: 20px;
     align-items: center;
@@ -107,10 +104,12 @@ body {
 .user-notificition a {
     font-size: 2rem;
     text-decoration: none;
+    background-color: none;
 }
 
 .user-notificition a .bx {
     line-height: 2;
+    color:black;
 
 }
 
