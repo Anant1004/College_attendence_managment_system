@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffdddd;
+    position: relative;
 }
 
 #menu {
@@ -29,29 +29,6 @@ body {
 #bar3 {
     transform: translateY(4px);
 }
-
-
-.sidepanel li a {
-    color: #5e006d;
-    text-decoration: none;
-
-}
-
-.sidepanel li a:hover {
-    border: 1px solid #5e006d;
-}
-
-.sidepanel li {
-    list-style: none;
-}
-
-.sidepanel{
-    padding: 0;
-    margin: 0 20px;
-    transition: 1s ease;
-    display: none;
-}
-
 .icon .bar {
     background-color: #ce79db;
 }
@@ -68,17 +45,101 @@ body {
     opacity: 0;
 }
 
-.change{
-    background-color: #fff;
+/* hamburger close  */
+
+nav{
+    width: 0%;
     height: 100vh;
-    margin: 0;
-    position: absolute;
-    font-size: 30px;
-    z-index: -100;
-    width: 20%;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+   background-image: url(/assets/Shiny\ Overlay.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:  center;
+    padding-top: 100px;
+    border-radius: 0 30px 30px 0;
+    transition: .5s ease ;
 
+}
+.hide-navbar{
+    width: 22%;
+}
+nav .nav-option{
+/* background-color: rgb(177, 195, 177); */
+    width: 70%;
+    height: 60px;
+    display:flex;
+    opacity: 1;
+    
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5px 0px ;
+}
+.hide-navOption{
+    opacity: 0;
+}
+nav #second-nav{
+    height: 100px;
+    gap: 4px;
+}
+
+.nav-option span{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(159, 157, 157);
+}
+.nav-option a{
+    width: 100%;
+    height: 60%;
+   background-color: #f8cbff;
+   border-radius: 5px;
+   display: flex;
+   text-decoration: none;
+   color: #5e006d;
+   align-items: center;
+   font-size: 1rem;
+   font-weight: 600;
+   gap: 4px;
+   transition: .5s;
+}
+.nav-option a i{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.nav-option a:hover{
+    background-color: #9601ad;
+    color: #fff;
+
+}
+.nav-option a i{
+    margin-left: 7px;
+}
+
+
+/* main  */
+.main{
+    position: absolute;
+    left: 0%;
+    top:0;
+    width: 100%;
+    background-color:red;
+    display: flex;transition: .5s ease;
+}
+.expand-main{
+    width: 78%;
+    left: 22%;
+}
+.teacher-title{
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.teacher-title #navigation{
+    margin-top: 2px;
 }
