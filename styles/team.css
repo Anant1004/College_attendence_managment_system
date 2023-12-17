@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Poppins:wght@300;500;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-}
-body{
-
 }
 #main{
     display: flex;
@@ -15,27 +12,25 @@ body{
     width: 100%;
 
 }
-.container{
+.team-container{
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.container .card{
-    /* position: relative; */
+.team-container .card{
     width: 300px;
     height: 400px;
-    /* background: rgba(255, 255, 255, 0.05); */
     margin: 20px;
-    box-shadow: 0 15px 35px #111;
+    box-shadow: 1px 1px 6px #efaaaa;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
 }
-.container .card .content{
+.team-container.card .content{
     position: relative;
     display: flex;
     justify-content: center;
@@ -44,11 +39,11 @@ body{
     opacity: 0.95;
     transition: 0.5s;
 }
-.container .card:hover .content{
+.team-container .card:hover .content{
     opacity: 1;
     transform: translateY(-20px);
 }
-.container .card .content .img-box{
+.team-container .card .content .img-box{
     position: relative;
     width: 150px;
     height: 150px;
@@ -57,7 +52,7 @@ body{
     border: 10px solid rgba(0, 0, 0, 0.25);
 
 }
-.container .card .content .img-box img{
+.team-container .card .content .img-box img{
     position: absolute;
     top: 0;
     left: 0;
@@ -65,7 +60,7 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.container .card .content .content-box h3{
+.team-container .card .content .content-box h3{
     color: #5e006d;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -75,17 +70,17 @@ body{
     margin: 20px 0 10px;
     line-height: 1.1rem;
 }
-.container .card .content .content-box h3 span{
+.team-container .card .content .content-box h3 span{
     font-size: 12px;
     font-weight: 300;
     text-transform: initial;
 }
-.container .card .sci{
+.team-container .card .sci{
     position: absolute;
     bottom: 50px;
     display: flex;
 }
-.container .card .sci li{
+.team-container .card .sci li{
     list-style: none;
     margin: 0 10px;
     transform: translateY(40px);
@@ -93,17 +88,22 @@ body{
     opacity: 0;
     transition-delay:calc(0.1s * var(--i)) ;
 }
-.container .card:hover .sci li{
+.team-container .card:hover .sci li{
     transform: translateY(0px);
     opacity: 1;
 }
-.container .card .sci li a{
+.team-container .card .sci li a{
     color: #5e006d;
     font-size: 30px
     ;
 }
+@media screen and (max-width: 1350px){
+    #main{
+        height: 159vh;
+    }
+}
 @media screen and (max-width: 425px){
-    section{
-        margin-top: 550px;
+    #main{
+        height: 230vh;
     }
 }

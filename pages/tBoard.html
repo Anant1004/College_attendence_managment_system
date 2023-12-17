@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher dashboard</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="title">
-          <i class='bx bx-menu'></i>
-            <img src="/asset/image/icons8-smart-card-64.png" alt="">
-            <h2>Teacher dashboard</h2>
-            
-        </div>
-        <div class="nav">
-            <a href="/asset/pages/contact.html">Back to home</a>
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="/styles/teacher_Dashboard.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+        <nav id="nav-container">
+            <div class="nav-option">
+                <span> TRACK </span>
+                <a href=""><i class="bx bx-file"></i>Attendence</a>
+            </div>
+            <div class="nav-option" id="second-nav">
+                <span> ANALYZE </span>
+                <a href=""><i class="bx bx-file"></i>Dasboard</a>
+                <a href=""><i class="bx bx-file"></i>report</a>
+            </div>
+            <div class="nav-option">
+                <span> MANAGE </span>
+                <a href=""><i class="bx bx-file"></i>Student</a>
+            </div>
+            <div class="nav-option">
+                <span> NOTICE </span>
+                <a href=""><i class="bx bx-file"></i>NOTICE</a>
+            </div>
+            <div class="nav-option">
+                <span> MODE </span>
+                <a href=""><i class="bx bx-file"></i>Vision</a>
+            </div>
+            <div class="nav-option">
+                <span> LOGOUT </span>
+                <a href=""><i class="bx bx-file"></i>Logout</a>
+            </div>
+        </nav>
+    <div class="main" id="mainTeacherContainer">
+        <div class="teacher-title">
+            <div id="navigation" >
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <h1>SMART ATTEND</h1>
         </div>
     </div>
-    </div>
-  </body>
+
+    <script src="/scripts/teacher_Dashboard.js"></script>
+</body>
+
 </html>
+
+<!-- <div id="navigation">
+    <div id="menu" onclick="onClickMenu()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+    </div>
+</div> -->
