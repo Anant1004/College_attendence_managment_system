@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Poppins:wght@200;400&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
@@ -5,16 +12,16 @@ body {
 }
 
 #menu {
-    width: 35px;
-    height: 30px;
-    margin: 30px 0 20px 20px;
+    width: 26px;
+    height: 21px;
+    margin: 30px 0 20px 0px;
     cursor: pointer;
     z-index: 100;
 
 }
 
 .bar {
-    height: 5px;
+    height: 4px;
     width: 100%;
     background-color: #5e006d;
     display: block;
@@ -30,7 +37,7 @@ body {
     transform: translateY(4px);
 }
 .icon .bar {
-    background-color: #ce79db;
+    background-color: #5e006d;
 }
 
 .icon #bar1 {
@@ -50,7 +57,8 @@ body {
 nav{
     width: 0%;
     height: 100vh;
-    /* position: fixed; */
+    position:fixed;
+    left: -10%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -60,27 +68,21 @@ nav{
    background-size: cover;
    background-position:  center;
     padding-top: 100px;
-    border-radius: 0 30px 30px 0;
     transition: .5s ease ;
-
 }
-.hide-navbar{
-    width: 22%;
+.expand-navbar{
+    width: 20%;
+    left: 0;
 }
 nav .nav-option{
 /* background-color: rgb(177, 195, 177); */
     width: 70%;
     height: 60px;
     display:flex;
-    opacity: 1;
-    
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
     margin: 5px 0px ;
-}
-.hide-navOption{
-    opacity: 0;
 }
 nav #second-nav{
     height: 100px;
@@ -118,28 +120,70 @@ nav #second-nav{
 .nav-option a i{
     margin-left: 7px;
 }
-
-
 /* main  */
 .main{
     position: absolute;
     left: 0%;
     top:0;
     width: 100%;
-    background-color:red;
+    height: 100vh;
     display: flex;transition: .5s ease;
+    background-color: #ffdddd;
 }
 .expand-main{
-    width: 78%;
-    left: 22%;
+    width: 80%;
+    left: 20%;
 }
 .teacher-title{
     padding: 0 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+
 }
-.teacher-title #navigation{
-    margin-top: 2px;
+.hamburger-title{
+    height:100%;
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    gap:20px;
+    align-items: center;
+}
+.hamburger-title h1 a{
+    text-decoration: none;
+    color: #5e006d;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.hamburger-title h1{
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.user-notificition{
+    height:100%;
+    width: 11%;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    align-items: center;
+}
+.user-notificition a{
+    font-size: 2rem;
+    text-decoration: none;
+}
+.user-notificition  a .bx{
+        line-height: 2;
+    
+}
+.user-notificition .user-circle{
+    height:45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid black;
 }
