@@ -119,10 +119,10 @@
             <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
           <span>or use your email password</span>
-          <input type="email" placeholder="Email" class="pop-input" />
-          <input type="password" placeholder="Password" class="pop-input" />
+          <input id="teachId" type="email" placeholder="Email" class="pop-input" />
+          <input id="teachPass" type="password" placeholder="Password" class="pop-input" />
           <a href="#">Forget Your Password?</a>
-          <button>Sign In</button>
+          <button onclick="signbtn" type="submit">Sign In</button>
           <a href="" class="close-btn">Close</a>
         </form>
       </div>
@@ -146,12 +146,13 @@
   </div>
   <script src="scripts/script.js"></script>
   <script src="/scripts/pop.js"></script>
+  <script src="/scripts/bothvalidation.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script src="scripts/login.js"></script>
+  <!-- <script src="scripts/login.js"></script> -->
 </body>
 
 </html>
