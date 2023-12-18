@@ -136,12 +136,12 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: .105s ease-in;
+    transition: .5s ease-in-out;
     padding-top: 100px;
 }
 
 .expand-navbar {
-    width: 20%;
+    width: 25%;
     left: 0;
     top: 60px;
 }
@@ -206,6 +206,7 @@ section {
     display: flex;
     background-color: #ffdddd;
     height: 100vh;
+    transition: .5s ease-in-out;
 }
 
 .main-section {
