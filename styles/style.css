@@ -395,6 +395,10 @@ footer h6 {
   z-index: 9;
   transform: scale(0);
 }
+input[type="email"]:invalid {
+  border: 2px solid tomato;
+  background: mistyrose;
+}
 
 .pop-container {
   background-color: #fff;
