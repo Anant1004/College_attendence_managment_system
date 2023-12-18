@@ -345,3 +345,33 @@ section {
         transform: translate3d(0, 0, 0) translateZ(0);
     }
 }
+footer {
+    padding: 0 150px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1.5px solid rgb(241, 188, 188);
+  }
+  
+  footer .social-media-footer {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .social-media-footer a i {
+    font-size: 1.5rem;
+    color: #5e006d;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .social-media-footer a i:hover {
+    transform: scale(1.2);
+    color: #bc04d8;
+  }
+  
+  footer h6 {
+    color: #5e006d;
+  }
