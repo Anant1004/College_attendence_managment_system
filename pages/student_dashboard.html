@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher_dashboard</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/styles/teacher_dashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, maiores.</p>
+    <div class="header">
+        <div class="hamburger-title">
+            <div id="navigation">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <h1><a href="/index.html">Smart Attend</a></h1>
+        </div>
+        <div class="user-notificition">
+            <a href=""><i class='bx bx-message-alt-detail'></i></a>
+            <a href=""><i class='bx bx-bell'></i></a>
+            <div class="user-circle"></div>
+        </div>
+    </div>
+    <section>
+        <nav id="nav-container">
+            <div class="nav-option">
+                <span class="nav-span"> TRACK </span>
+                <a href=""><i class="bx bx-file"></i>Attendence</a>
+            </div>
+            <div class="nav-option" id="second-nav">
+                <span class="nav-span"> ANALYZE </span>
+                <a href=""><i class="bx bx-file"></i>Dasboard</a>
+                <a href=""><i class="bx bx-file"></i>report</a>
+            </div>
+            <div class="nav-option">
+                <span class="nav-span"> MANAGE </span>
+                <a href=""><i class="bx bx-file"></i>Student</a>
+            </div>
+            <div class="nav-option">
+                <span class="nav-span"> NOTICE </span>
+                <a href=""><i class="bx bx-file"></i>NOTICE</a>
+            </div>
+            <div class="nav-option">
+                <span class="nav-span"> MODE </span>
+                <a href=""><i class="bx bx-file"></i>Vision</a>
+            </div>
+            <div class="nav-option">
+                <span class="nav-span"> LOGOUT </span>
+                <a href="/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMJJREFUSEvdlcEJwlAMhr9e3EEEQXqoI3QLl9ANvLiBHaBreHQQL72JgnsogfdApcofaKD6znn/l/xJSEHwK4L1GQ1gBeyBpVBxB2yBo8WqFdyAmSCeQ85A6QHc008loZdY5YNp/x5gArTAJlkzaAVT4ADUjiF47v/XHpioiRvEMwQSYJ1sMXs8731QPlYQDrCsQy3KtoQ2OUNCx7SvwYPuwX8CrsDcsRwXYOHZVDs4DVAJkBOw8x4cQbc/RL0H4wU8ALeMKBlSozKnAAAAAElFTkSuQmCC"/></i>Logout</a>
+            </div>
+        </nav>
+        <div class="content-section">
+            <div class="first-section">
+                <h2>ATTENDENCE</h2>
+                <div class="first-section-box">
+                    <div class="first-section-dropdown">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" style="background-color:#BA14F5" ;
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              SEMESTER
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">SEMESTER-1</button></li>
+                                <li><button class="dropdown-item" type="button">SEMESTER-2</button></li>
+                                <li><button class="dropdown-item" type="button">SEMESTER-3</button></li>
+                                <li><button class="dropdown-item" type="button">SEMESTER-4</button></li>
+                                <li><button class="dropdown-item" type="button">SEMESTER-5</button></li>
+                                <li><button class="dropdown-item" type="button">SEMESTER-6</button></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle " style="background-color:#BA14F5" ;
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               SUBJECT
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">PROBABILITY & STATISTICS</button></li>
+                                <li><button class="dropdown-item" type="button">DATA STRUCTURE USING C </button></li>
+                                <li><button class="dropdown-item" type="button">COMPUTER ARCHITECTURE</button></li>
+                                <li><button class="dropdown-item" type="button">JAVA PROGRAMMING</button></li>
+                                <li><button class="dropdown-item" type="button">SYSTEM ANALYSE & DESIGN</button></li>
+                            
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" style="background-color:#BA14F5" ;
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TEACHER
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">MR VIVIEK </button></li>
+                                <li><button class="dropdown-item" type="button">MR SK.KUMAR</button></li>
+                                <li><button class="dropdown-item" type="button">MR ROUSHAN KUMAR</button></li>
+                                <li><button class="dropdown-item" type="button">MR PHALANA</button></li>
+                                <li><button class="dropdown-item" type="button">MR DHEMKANA</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="generate-btn" href="/">
+                        <button class="bn54">
+                            <span class="bn54span">GENERATE SHEET</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="second-section">
+
+        </div>
+    </section>
+     <footer>
+    <div class="social-media-footer">
+      <a href="https://www.instagram.com/akash_yadav_mist/"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="https://github.com/Akashkumar9508"><i class="bx bxl-github"></i></a>
+      <a href=""><i class="bx bxl-twitter"></i></a>
+      <a href="https://www.youtube.com/@codeon-9508"><i class="bx bxl-youtube"></i></a>
+    </div>
+    <h6>Copyright © 2023. All Rights Reserved to Smart Attend Team</h6>
+  </footer>
+
+    <script src="/scripts/teacher_Dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
